@@ -1,0 +1,12 @@
+name: Release Notifications
+
+on:
+  release:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Notify about a new release
+      uses: bitoiu/release-notify-action@v1.0
+      
